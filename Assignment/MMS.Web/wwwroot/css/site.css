@@ -1,0 +1,120 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem rgba(199, 199, 202, 0.874), 0 0 0 0.25rem #474748;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: rgb(33,37,41);
+}
+
+.text-custom-color {
+  color: rgb(248, 249, 250);
+}
+
+.carousel-item img {
+  object-fit: contain;
+  height: 400px;
+  width: 100%; 
+}
+
+/*search box*/
+.form-input{
+  background-color: #b9b8be;
+  border: #38373f;
+  color:rgb(3, 3, 3);
+  transition: background-color 0.3s ease;
+}
+
+/* background colour for the search input when it's focused */
+.form-input:focus {
+  background-color: #d0d0d5;
+  color:rgb(3, 3, 3);
+} 
+
+.btn-custom {
+  color: #fff;
+  background-color: rgb(33,37,41);
+  border-color: #b9b8be;
+}
+
+.btn-custom:active, .btn-custom:focus, .btn-custom:hover {
+  color: #ffd200;
+  background-color: #38373f; 
+  border-color: #b9b8be;
+}
+
+.btn-custom-color {
+  color: inherit;
+}
+
+.btn-custom-color:active, .btn-custom-color:focus, .btn-custom-color:hover {
+  color: #ffd200;
+}
+
+.comp-background {
+  background-color: rgb(33,37,41);
+}
+
+.custom-card {
+  background-color: rgb(33,37,41);
+  border: 2px solid #38373f;
+  color: rgb(248, 249, 250);
+}
+
+.custom-card img {
+  max-height: 100%;
+  height: 350px;
+}
+
+.custom-icon {
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(33,37,41);
+  border-color: #b9b8be;
+  transition: transform 0.1s ease;
+  padding: 10px;
+}
+
+.custom-icon:hover {
+  transform: scale(1.1); 
+}
+
+.custom-icon.is-active {
+  text-decoration: underline;
+  text-decoration-color: #ffd200;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  /* border-bottom: 2px solid rgb(229, 229, 238);
+  padding-bottom: 2px; */
+}
+
+.card-link{
+  text-decoration: none; /* Removing the underline in the card component */
+  color: inherit;
+}
+
+.attention-text{
+  color: #ffd200;
+}
+
+.breadcrumb-item a {
+  color: #ffd200;
+  text-decoration: none;
+  opacity: 0.7;
+}
+

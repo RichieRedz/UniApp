@@ -1,0 +1,65 @@
+@model Movie
+
+<partial name="_BreadCrumbs" model=@(new [] {
+("/", "Home"),
+("/Movie", "Movies"),
+($"/Movie/Details/{Model.MovieId}", $"{Model.Title}"),
+("","Delete Movie")
+}) />
+
+<div class="card rounded shadow p-4 mt-3 custom-card">
+
+    <!-- Title bar -->
+    <div class="border-bottom d-flex align-items-center justify-content-between mb-3">
+        <h1 class="text-primary text-light">Delete: <span class= "attention-text"> @Model.Title</span></h1>
+    </div>
+
+    <div class="row">
+        
+        <!-- Details and Navigation -->
+        <div class="col-md-8">
+            <!-- Movie details -->
+            <dl class="row">
+                <dt class="col-4 pb-1">Title</dt>
+                <dd class="col-8 pb-1">@Model.Title</dd>
+
+                <dt class="col-4 pb-1">Genre</dt>
+                <dd class="col-8 pb-1">@Model.MovieGenre</dd>
+
+                <dt class="col-4 pb-1">Released</dt>
+                <dd class="col-8 pb-1">@Model.Year</dd>
+
+                <dt class="col-4 pb-1">Rating</dt>
+                <dd class="col-8 pb-1">@Html.Raw(StarRatingHelper.StarRating(Model.AvgReview))</dd>
+
+                <dt class="col-4 pb-1">Reviews</dt>
+                <dd class="col-8 pb-1">@Model.Reviews.Count</dd>
+            </dl>
+
+            <h4 class="pb-3 attention-text">Delete Movie and all Reviews...</h4>
+
+            <!-- Submit and Cancel buttons -->
+            <div class="mt-3 d-flex">
+
+                <form asp-action="DeleteConfirmed">
+                    <input type="hidden" asp-for="@Model.MovieId" class="form-control"/>
+                    <button type="submit" class="btn btn-outline-danger m-2">Delete</button>
+                </form>
+
+                <a class="btn btn-custom m-2" asp-controller="Movie" asp-action="Details" asp-route-id="@Model.MovieId">Cancel</a>
+            </div>
+        </div>
+        
+        <!-- Photo -->
+        <div class="col-md-4">
+            <img asp-condition="@(!string.IsNullOrEmpty(Model.PhotoURL))" src="@Model.PhotoURL" class="img-fluid" alt="@Model.Title photo"/>            
+            <span asp-condition="@string.IsNullOrEmpty(Model.PhotoURL)" class="text-muted" aria-label="missing @Model.Title photo">No photo available</span>     
+        </div>
+    </div>
+</div>
+
+
+<!-- Tickets -->
+@* <div class="card rounded shadow p-4 mt-4">
+    <partial name="_Tickets" />
+</div> *@

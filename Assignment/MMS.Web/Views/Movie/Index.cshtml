@@ -1,0 +1,47 @@
+@* @model IList<Movie> *@
+
+<partial name="_BreadCrumbs" model=@(new [] {
+("/", "Home"),
+("", "Movies")
+}) />
+
+    <!-- Search Bar Section -->
+<partial name="_Search" />
+
+<div class="border-bottom d-flex align-items-center justify-content-between mt-2 mb-1">
+    <h1 class="text-center text-light">Movie List</h1>
+    <a class="btn btn-sm btn-warning" asp-action="create">Add Movie</a>
+</div>
+
+<!-- Movies Table -->
+<table class="table-dark table table-hover mt-2">
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th class="text-center">Genre</th>
+                <th class="text-center">Released</th>
+                <th class="text-center">Rating</th>
+                <th class="text-center">Reviews</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var s in Model.Movies)
+            {
+                <tr>
+                    <td>@s.Title</td>
+                    <td class="text-center">@s.MovieGenre</td>
+                    <td class="text-center">@s.Year</td>
+                    <td class="text-center">@Html.Raw(StarRatingHelper.StarRating(s.AvgReview))</td>
+                    @* <i class="bi bi-star-half"></i>&nbsp;@(s.AvgReview != -1 ? s.AvgReview.ToString() : "-") *@
+                    <td class="text-center">@s.Reviews.Count</td>
+                    <td class="text-center">
+                        <a class="btn btn-custom-color p-0 m-0" asp-action="Details" asp-route-id="@s.MovieId"><i class="bi bi-eye"></i></a>
+                        <a class="btn btn-custom-color p-0 m-0" asp-action="Edit" asp-route-id="@s.MovieId"><i class="bi bi-pencil-square"></i></a>  
+                        <a class="btn btn-custom-color p-0 m-0" asp-action="Delete" asp-route-id="@s.MovieId"><i class="bi bi-x-circle"></i></a>
+                        <a class="btn btn-custom-color p-0 m-0" asp-action="NewReview" asp-route-id="@s.MovieId"><i class="bi bi-star-half"></i></a> 
+                    </td>
+                </tr>
+            }
+        </tbody>
+</table>

@@ -1,0 +1,29 @@
+<partial name="_BreadCrumbs" model=@(new [] {
+   ("/", "Home"),
+   ("", "Contact us")
+}) />
+
+
+<div class="text-center text-custom-color">
+    <h1>Contact Us</h1> 
+</div>
+
+<form class="text-custom-color mb-5">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input class="form-control form-input" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control form-input" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description</label>
+        <textarea class="form-control form-input" id="exampleFormControlTextarea1" rows="3" placeholder="please enter comments relating to your query here..."></textarea>
+    </div>
+    <div class="d-grid gap-2 text-end">
+        <button class="btn btn-custom" type="submit">Submit</button>
+    </div>
+</form>

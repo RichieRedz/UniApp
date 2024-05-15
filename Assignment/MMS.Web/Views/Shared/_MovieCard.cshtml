@@ -1,0 +1,71 @@
+@model List<TopMovieViewModel>
+
+<div class="flex-box row row-cols-1 row-cols-md-5 g-3">
+    @foreach (var movie in Model)
+    {
+        <div class="col">
+            <a class="card-link text-center" asp-action="Details" asp-controller="Movie" asp-route-id="@movie.MovieId">
+                <div class="card h-100 custom-card">
+                    <img src="@movie.PhotoURL" class="card-img-top" alt="@movie.Title">
+                    <div class="card-body">
+                        <p class="card-text">@Html.Raw(StarRatingHelper.StarRating(movie.Rating))</p>
+                        <h5 class="card-title">@movie.Title</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    }
+</div>
+
+
+
+
+
+<!--Original code for adding into a single component with no model only hard coded placeholders-->
+    @* <div class="flex-box row row-cols-1 row-cols-md-5 g-3">
+        <div class="col">
+            <div class="card h-100 custom-card">
+            <img src="https://i.ibb.co/ZW4m90f/Titanic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Text</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+            <img src="https://i.ibb.co/ZW4m90f/Titanic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Text</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+            <img src="https://i.ibb.co/ZW4m90f/Titanic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Text</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+            <img src="https://i.ibb.co/ZW4m90f/Titanic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Text</p>
+            </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 custom-card">
+            <img src="https://i.ibb.co/ZW4m90f/Titanic.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Text</p>
+            </div>
+            </div>
+        </div>
+    </div> *@

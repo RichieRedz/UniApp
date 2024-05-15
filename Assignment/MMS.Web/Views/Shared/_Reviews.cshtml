@@ -1,0 +1,38 @@
+@* @model MovieReviewViewModel *@
+@model IList<Review>
+
+
+<div class="card rounded shadow p-4 mt-3 custom-card">
+    <h3 class="text-primary text-light">Reviews</h3>
+
+
+<table class="table-dark table table-hover mt-3">
+    <thead>
+        <tr class="align-middle">
+            <th class="text-center">Date Added</th>
+            <th class="text-center">Review Author</th>
+            <th class="text-center">Rating</th>
+            <th class="p-3">Review Text</th>
+            <th class="text-center">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var review in Model)
+        {
+            <tr class="align-middle">
+                <td class="text-center">@review.Date.ToShortDateString()</td>
+                <td class="text-center">@review.ReviewAuthor</td>
+                <td class="text-center mr-1">@Html.Raw(StarRatingHelper.StarRating(review.Rating))</td>
+                <td class="p-3">@review.ReviewText</td>
+                <td class="text-center">
+                    <a class="btn btn-custom-color p-2 m-0" asp-action="EditReview" asp-route-id="@review.Id"><i class="bi bi-pencil-square"></i></a>  
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

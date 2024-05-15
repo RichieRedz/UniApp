@@ -1,0 +1,66 @@
+@model Movie
+
+<partial name="_BreadCrumbs" model=@(new [] {
+("/", "Home"),
+("/Movie", "Movies"),
+("", $"{Model.Title}"),
+}) />
+
+<div class="card rounded shadow p-4 mt-3 custom-card">
+
+    <!-- Title bar -->
+    <div class="border-bottom d-flex align-items-center justify-content-between mb-3">
+        <h1 class="text-primary text-light">Movie Details: <span class= "attention-text"> @Model.Title</span></h1>
+                
+        <a asp-action="Index" class="btn btn-sm btn-custom" aria-label="student list">
+            <i class="bi bi-list"></i>
+            <span>Movie List</span>
+        </a> 
+       
+    </div>
+
+    <!-- Action buttons -->
+    <div class="mb-3">
+        <a class="btn btn-custom-color p-2 m-0" asp-action="NewReview" asp-route-id="@Model.MovieId"><i class="bi bi-star-half"></i></a>
+        <a class="btn btn-custom-color p-2 m-0" asp-action="Edit" asp-route-id="@Model.MovieId"><i class="bi bi-pencil-square"></i></a>  
+        <a class="btn btn-custom-color p-2 m-0" asp-action="Delete" asp-route-id="@Model.MovieId"><i class="bi bi-x-circle"></i></a>
+    </div>
+
+    <div class="row">
+
+        <!-- Details and Navigation -->
+        <div class="col-8 d-flex flex-column justify-content-between">
+
+            <!-- Movie details -->
+            <dl class="row">
+                <dt class="col-4 pb-1">Title</dt>
+                <dd class="col-8 pb-1">@Model.Title</dd>
+
+                <dt class="col-4 pb-1">Genre</dt>
+                <dd class="col-8 pb-1">@Model.MovieGenre</dd>
+
+                <dt class="col-4 pb-1">Released</dt>
+                <dd class="col-8 pb-1">@Model.Year</dd>
+
+                <dt class="col-4 pb-1">Rating</dt>
+                <dd class="col-8 pb-1">@Html.Raw(StarRatingHelper.StarRating(Model.AvgReview))</dd>
+
+                <dt class="col-4 pb-1">Reviews</dt>
+                <dd class="col-8 pb-1">@Model.Reviews.Count</dd>
+            </dl>
+
+        </div>
+
+        <!-- Photo -->
+        <div class="col-4">            
+            <img asp-condition="@(!string.IsNullOrEmpty(Model.PhotoURL))" src="@Model.PhotoURL" class="img-fluid" alt="@Model.Title photo"/>            
+            <span asp-condition="@string.IsNullOrEmpty(Model.PhotoURL)" class="text-muted" aria-label="missing @Model.Title photo">No photo available</span>     
+        </div>
+
+    </div>
+</div>
+
+<!-- Tickets -->
+<div class="card rounded shadow p-4 mt-3 custom-card">
+    <partial name="_Reviews" for="@Model.Reviews"/>
+</div>

@@ -1,0 +1,11 @@
+@model MovieSearchViewModel
+
+<div class="search-container p-3">
+  <form asp-action="Index" method="GET" class="input-group">
+
+    <input class="form-control rounded form-input" asp-for="Query" placeholder="MovieHub Search...">
+    <div class="input-group-append" style="margin-left: 5px;">
+      <button class="btn btn-custom" type="submit">Search</button>
+    </div>
+  </form>
+</div>

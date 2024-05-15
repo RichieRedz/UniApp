@@ -1,0 +1,47 @@
+﻿@model TopMovieViewModel
+
+<body>
+<!-- Banner Section -->
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!--Slide 1 Movie image-->
+    <div class="carousel-item" data-bs-interval="10000">
+    <img src="https://i.ibb.co/vzhxqw7/Banner1.png" class="d-block w-100" alt="Image 1">
+    </div>
+
+    <!--Slide 2 Movie image-->
+    <div class="carousel-item" data-bs-interval="10000">
+      <img src="https://i.ibb.co/Lg4tsCs/Banner2.png" class="d-block w-100" alt="Image 2">
+    </div>
+
+    <!--Slide 3 Custom Banner-->
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://i.ibb.co/R3kgQh7/Banner3.png" class="d-block w-100" alt="Image 3">
+    </div>
+  </div>
+  
+  <!--Controls-->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+    <!-- Movie List Section -->
+
+<div class="border-bottom d-flex align-items-center justify-content-between mb-3">
+        <h3 class="text-custom-color">Top Rated Movies</h3>
+</div>
+    <!-- Movie Partial -->
+<div class="card rounded shadow p-2 comp-background mb-3">
+    
+    <partial name="_MovieCard" for="@Model.TopRatedMovies" />
+</div>
+
+    </div>
+</body>
