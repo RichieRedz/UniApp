@@ -1248,19 +1248,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/richiecruickshank/.nuget/packages/": {}
+    "/home/codespace/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/richiecruickshank/Documents/Assignment/MMS.Data/MMS.Data.csproj",
+      "projectUniqueName": "/workspaces/UniApp/Assignment/MMS.Data/MMS.Data.csproj",
       "projectName": "MMS.Data",
-      "projectPath": "/Users/richiecruickshank/Documents/Assignment/MMS.Data/MMS.Data.csproj",
-      "packagesPath": "/Users/richiecruickshank/.nuget/packages/",
-      "outputPath": "/Users/richiecruickshank/Documents/Assignment/MMS.Data/obj/",
+      "projectPath": "/workspaces/UniApp/Assignment/MMS.Data/MMS.Data.csproj",
+      "packagesPath": "/home/codespace/.nuget/packages/",
+      "outputPath": "/workspaces/UniApp/Assignment/MMS.Data/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/richiecruickshank/.nuget/NuGet/NuGet.Config"
+        "/home/codespace/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1318,7 +1318,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

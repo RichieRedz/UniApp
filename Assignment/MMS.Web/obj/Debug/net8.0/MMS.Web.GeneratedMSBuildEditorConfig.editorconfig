@@ -9,107 +9,107 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MMS.Web
 build_property.RootNamespace = MMS.Web
-build_property.ProjectDir = /Users/richiecruickshank/Documents/Assignment/MMS.Web/
+build_property.ProjectDir = /workspaces/UniApp/Assignment/MMS.Web/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/richiecruickshank/Documents/Assignment/MMS.Web
+build_property.MSBuildProjectDirectory = /workspaces/UniApp/Assignment/MMS.Web
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Home/ContactUs.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Home/ContactUs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0VXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Home/Index.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Home/Privacy.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Movie/Create.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Movie/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Movie/Delete.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Movie/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Movie/Details.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Movie/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Movie/Edit.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Movie/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Movie/EditReview.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Movie/EditReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvRWRpdFJldmlldy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Movie/Index.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Movie/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Movie/NewReview.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Movie/NewReview.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvTmV3UmV2aWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/Error.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_Alert.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_Alert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BbGVydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_AlertIcons.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_AlertIcons.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19BbGVydEljb25zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_BreadCrumbs.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_BreadCrumbs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19CcmVhZENydW1icy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_LoginPartial.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_MovieCard.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_MovieCard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19Nb3ZpZUNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_Reviews.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_Reviews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19SZXZpZXdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_Search.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19TZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/User/Login.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/User/Register.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/User/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlci9SZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/_ViewImports.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/_ViewStart.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/richiecruickshank/Documents/Assignment/MMS.Web/Views/Shared/_Layout.cshtml]
+[/workspaces/UniApp/Assignment/MMS.Web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zsvzjcxxd7

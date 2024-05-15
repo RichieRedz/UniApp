@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MMS.Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+179f19ccf12d4f4b83853079261a1fe7c41b65dd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MMS.Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MMS.Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
